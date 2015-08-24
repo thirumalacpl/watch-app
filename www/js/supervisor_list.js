@@ -7,21 +7,21 @@ $('#lis').empty();
         //alert("sdfsdaffasf");
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
         $(document).off('click', '#inprogresslistnew').on('click', '#inprogresslistnew', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
           $(document).off('click', '#verifiedlistnew').on('click', '#verifiedlistnew', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_verified_list'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_verified_list'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
@@ -44,7 +44,7 @@ var superempty=superArray_array;
 
 if(superempty == ""){
   //alert(superempty+'No record Found');
-  $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 }
 
 		for(a=0;a<superArray_array.length;a++){
@@ -167,7 +167,7 @@ if(qualification_id == '1' || qualification_id == '2' || qualification_id == '3'
  //alert('currentob education succes');
   sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
  sessionStorage.setItem("currentobj_educational_records",JSON.stringify(eductional_objaa));
-   $.mobile.changePage($('#supervisor_view_inside'), { transition: "slide", changeHash: true, reverse: false });
+   $.mobile.changePage($('#supervisor_view_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 }
 
@@ -175,7 +175,7 @@ if(qualification_id == '12' || qualification_id == '13' || qualification_id == '
  //alert('currentob address succes');
   sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
 sessionStorage.setItem("currentobja_addressid",JSON.stringify(address_objag ));
-   $.mobile.changePage($('#supervisor_view_inside'), { transition: "slide", changeHash: true, reverse: false });
+   $.mobile.changePage($('#supervisor_view_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 }
          
@@ -183,7 +183,7 @@ sessionStorage.setItem("currentobja_addressid",JSON.stringify(address_objag ));
  //alert('currentob employment succes');
   sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
   sessionStorage.setItem("currentobj_employment_records",JSON.stringify(employment_objad));
-   $.mobile.changePage($('#supervisor_view_inside'), { transition: "slide", changeHash: true, reverse: false });
+   $.mobile.changePage($('#supervisor_view_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 }
 

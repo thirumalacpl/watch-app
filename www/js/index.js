@@ -1,7 +1,7 @@
 $(document).on('pagecreate', '#pageone', function(){ 
     //alert("hidash");
     if(sessionStorage.getItem("logged_in")=="1"){
-          $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false }); 
+          $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false }); 
     }
 $(document).off('click', '#submit').on('click', '#submit', function() { 
     if($('#username').val().length > 0 && $('#password').val().length > 0){
@@ -23,7 +23,7 @@ success: function (result) {
     //alert(pas == [object Object]);
            if(pas == ''){
     alert('username or password entered is invalid');
-    $.mobile.changePage($('#pageone'), { transition: "slide", changeHash: true, reverse: false });
+    $.mobile.changePage($('#pageone'), { transition: "none", changeHash: true, reverse: false });
     return false; 
 }
     if(result[0]){
@@ -44,7 +44,7 @@ success: function (result) {
 
         $.mobile.loading().hide();
         $(".ui-icon-loading").hide();
-         $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false }); 
+         $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false }); 
   
 
     }else {

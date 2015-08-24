@@ -42,7 +42,7 @@ var region=regionArray_array.region;
                  sessionStorage.setItem("supervisor_view_new_veri_array",JSON.stringify(result[0]));
             // alert(region+'refresh new regionArray_array');
                  $.mobile.loading().hide();
-                 $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
+                 $.mobile.changePage($('#supervisor_list_view'), { transition: "none", changeHash: true, reverse: false });
               }else {
                 alert('No Data Found for the search record'); 
               }
@@ -81,7 +81,7 @@ var region=regionArray_array.region;
                   sessionStorage.setItem("activity_log_details_array",JSON.stringify(result[1]));
             // alert(region+'refresh new regionArray_array');
                  $.mobile.loading().hide();
-                 $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "slide", changeHash: true, reverse: false });
+                 $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "none", changeHash: true, reverse: false });
               }else {
                 alert('No Data Found for the search record'); 
               }
@@ -121,7 +121,7 @@ var region=regionArray_array.region;
                   //sessionStorage.setItem("activity_log_details_array",JSON.stringify(result[1]));
             // alert(region+'refresh new regionArray_array');
                  $.mobile.loading().hide();
-                 $.mobile.changePage($('#supervisor_verified_list'), { transition: "slide", changeHash: true, reverse: false });
+                 $.mobile.changePage($('#supervisor_verified_list'), { transition: "none", changeHash: true, reverse: false });
               }else {
                 alert('No Data Found for the search record'); 
               }
@@ -162,7 +162,7 @@ var region=regionArray_array.region;
     /*$(document).off('click', '#new_verification').on('click', '#new_verification', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_list_view'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });*/
 
@@ -171,7 +171,7 @@ return false;
         $(document).off('click', '#not_verified').on('click', '#not_verified', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_list_view'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
         $(document).off('click', '#dashlogout').on('click', '#dashlogout', function() {
@@ -184,7 +184,7 @@ return false;
 /*          $(document).off('click', '#verified').on('click', '#verified', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_verified_list'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_verified_list'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });*/
  

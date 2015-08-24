@@ -7,7 +7,7 @@ $('#list_align_verified').empty();
         //alert("sdfsdaffasf");
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
@@ -15,14 +15,14 @@ return false;
           $(document).off('click', '#inproveri').on('click', '#inproveri', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
       $(document).off('click', '#new_verilistfromverified').on('click', '#new_verilistfromverified ', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_list_view'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
@@ -46,7 +46,7 @@ var superempty=sup_verified_array;
 
 if(superempty == ""){
   alert(superempty+'No record Found');
-  $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 }
 
 		for(a=0;a<sup_verified_array.length;a++){
@@ -155,7 +155,7 @@ if(qualification_id == '1' || qualification_id == '2' || qualification_id == '3'
  //alert('currentob education succes');
  sessionStorage.setItem("currentobj_veri",JSON.stringify(superr_objj));
 sessionStorage.setItem("currentobj_educational_records_veri",JSON.stringify(eductional_objq));
-   $.mobile.changePage($('#supervisor_verified_view_inside'), { transition: "slide", changeHash: true, reverse: false });
+   $.mobile.changePage($('#supervisor_verified_view_inside'), { transition: "none", changeHash: true, reverse: false });
        return false;
 }
 
@@ -163,7 +163,7 @@ if(qualification_id == '12' || qualification_id == '13' || qualification_id == '
  //alert('currentob address succes');
   sessionStorage.setItem("currentobj_veri",JSON.stringify(superr_objj));
          sessionStorage.setItem("currentobja_addressid_veri",JSON.stringify(address_obja ));
-   $.mobile.changePage($('#supervisor_verified_view_inside'), { transition: "slide", changeHash: true, reverse: false });
+   $.mobile.changePage($('#supervisor_verified_view_inside'), { transition: "none", changeHash: true, reverse: false });
        return false;
 }
          
@@ -171,7 +171,7 @@ if(qualification_id == '12' || qualification_id == '13' || qualification_id == '
  //alert('currentob employment succes');
  sessionStorage.setItem("currentobj_veri",JSON.stringify(superr_objj));
          sessionStorage.setItem("currentobja_emnployment_veri",JSON.stringify(employment_objad ));
-   $.mobile.changePage($('#supervisor_verified_view_inside'), { transition: "slide", changeHash: true, reverse: false });
+   $.mobile.changePage($('#supervisor_verified_view_inside'), { transition: "none", changeHash: true, reverse: false });
        return false;
 }
    

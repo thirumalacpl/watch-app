@@ -116,7 +116,7 @@ employment_obj = employment_upload_array[a];
           sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
           //alert("alert 3 ");
           //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-      $.mobile.changePage($('#supervisor_view_inside'), { transition: "slide", changeHash: true, reverse: false });
+      $.mobile.changePage($('#supervisor_view_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 
     

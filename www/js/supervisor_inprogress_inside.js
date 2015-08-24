@@ -6,33 +6,33 @@ $('#logapp').empty();
 
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_list_view'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
       $(document).off('click', '#dashboard_inpro_inside').on('click', '#dashboard_inpro_inside', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
         $(document).off('click', '#inproveri_inside').on('click', '#inproveri_inside', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
             $(document).off('click', '#inproveri_inside_neww').on('click', '#inproveri_inside_neww', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_list_view'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
                         $(document).off('click', '#before_inpro').on('click', '#before_inpro', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
@@ -40,7 +40,7 @@ return false;
           $(document).off('click', '#verified_inpro_inside').on('click', '#verified_inpro_inside', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_verified_list'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_verified_list'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
@@ -297,8 +297,8 @@ $.ajax({url: "http://staging.eimpressive.com/slimrestapi-watch/supervisor_status
         sessionStorage.setItem("supervisor_inprogress_count_array",JSON.stringify(result[1]));
           sessionStorage.setItem("supervisor_verified_count_array",JSON.stringify(result[2]));
         $.mobile.loading().hide();
-        $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false });
-        //$.mobile.changePage("dashboard",{ transition: "slide", changeHash: true, reverse: false }); 
+        $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
+        //$.mobile.changePage("dashboard",{ transition: "none", changeHash: true, reverse: false }); 
       }else {
         alert('No Data Found for the search record'); 
       }

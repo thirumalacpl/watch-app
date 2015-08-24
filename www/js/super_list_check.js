@@ -6,21 +6,21 @@ $('#listshow').empty();
       $(document).off('click', '#dashboarda').on('click', '#dashboarda', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
         $(document).off('click', '#not_verified').on('click', '#not_verified', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_list_view'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
           $(document).off('click', '#verified').on('click', '#verified', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_list_view'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
@@ -128,7 +128,7 @@ eductional_obj = educational_records_array[a];
           sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
           //alert("alert 3 ");
           //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-      $.mobile.changePage($('#supervisor_view_inside'), { transition: "slide", changeHash: true, reverse: false });
+      $.mobile.changePage($('#supervisor_view_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 
     
@@ -182,7 +182,7 @@ eductional_inpro_obj = educational_records_array[a];
           sessionStorage.setItem("currentobj",JSON.stringify(super_inpro_obj));
           //alert("alert 3 ");
           //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-      $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
+      $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 
     

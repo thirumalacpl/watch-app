@@ -7,7 +7,7 @@ $('#lis_align_inpro').empty();
         //alert("sdfsdaffasf");
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
@@ -15,14 +15,14 @@ return false;
           $(document).off('click', '#newveriinpro').on('click', '#newveriinpro', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_list_view'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
    $(document).off('click', '#verifiedlistnewpro').on('click', '#verifiedlistnewpro', function() {
   //sessionStorage.getItem.clear;
   //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_verified_list'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_verified_list'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 
@@ -76,7 +76,7 @@ var superempty=inprogressArray_array;
 
 if(superempty == ""){
   alert(superempty+'No record Found');
-  $.mobile.changePage($('#dashboard'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
 }
 
  
@@ -200,13 +200,13 @@ if(qualification_id == '1' || qualification_id == '2' || qualification_id == '3'
 sessionStorage.setItem("currentobj_educational_inpro",JSON.stringify(eductional_inpro_objay));
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 sessionStorage.setItem("currentobj_log_inpro",JSON.stringify(log_inpro_objg)); 
-$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
+$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
  sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 
 sessionStorage.setItem("currentobj_educational_inpro",JSON.stringify(eductional_inpro_objay));
-  $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 }
 
@@ -219,13 +219,13 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 sessionStorage.setItem("currentobj_log_inpro",JSON.stringify(log_inpro_objg)); 
 
 sessionStorage.setItem("currentobja_addressid_inpro",JSON.stringify(address_inpro_obja));
-$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
+$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 
     sessionStorage.setItem("currentobja_addressid_inpro",JSON.stringify(address_inpro_obja));
-  $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 }
          
@@ -238,12 +238,12 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 sessionStorage.setItem("currentobj_log_inpro",JSON.stringify(log_inpro_objg)); 
 
   sessionStorage.setItem("currentobj_employment_records_inpo",JSON.stringify(employment_obja_inpod));
-$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
+$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
  sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
   sessionStorage.setItem("currentobj_employment_records_inpo",JSON.stringify(employment_obja_inpod));
-  $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
+  $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 }
 
@@ -251,7 +251,7 @@ return false;
 if(log_inpro_objg !== undefined ){
 //alert('log current');
 sessionStorage.setItem("currentobj_log_inpro",JSON.stringify(log_inpro_objg)); 
-$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
+$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
 /*else{
@@ -266,7 +266,7 @@ return false;
            
            sessionStorage.setItem("currentobj_employment_records_inpo",JSON.stringify(employment_obja_inpo));
        
-      $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
+      $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "none", changeHash: true, reverse: false });
           return false;
 }*/
     
