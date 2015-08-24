@@ -15,13 +15,6 @@ return false;
   $.mobile.changePage($('#supervisor_verified_list'), { transition: "slide", changeHash: true, reverse: false });
 return false;
 });
-
-                  $(document).off('click', '#before_verified').on('click', '#before_verified', function() {
-  //sessionStorage.getItem.clear;
-  //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_verified_list'), { transition: "slide", changeHash: true, reverse: false });
-return false;
-});
    
           $(document).off('click', '#inproveria').on('click', '#inproveria', function() {
   //sessionStorage.getItem.clear;

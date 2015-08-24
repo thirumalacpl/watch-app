@@ -287,7 +287,7 @@ padding: 3%;
 @media only screen and (min-width: 320px)  and (max-width: 480px) {
 	sup {
 	text-decoration: none;
-    vertical-align: 360% !important;
+    vertical-align: 320% !important;
     padding-top: -51% !important;
     text-decoration: none !important;
     list-style: none;

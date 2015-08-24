@@ -29,13 +29,6 @@ return false;
   $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
 return false;
 });
-                        $(document).off('click', '#before_inpro').on('click', '#before_inpro', function() {
-  //sessionStorage.getItem.clear;
-  //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "slide", changeHash: true, reverse: false });
-return false;
-});
-
 
           $(document).off('click', '#verified_inpro_inside').on('click', '#verified_inpro_inside', function() {
   //sessionStorage.getItem.clear;
@@ -54,7 +47,6 @@ return false;
 
       //alert("success");
 $('.document_imag_inpro').empty();
-$('#select_inpro').empty();
 
 assignValues();
 

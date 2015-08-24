@@ -26,13 +26,12 @@ return false;
 return false;
 });
 
-                     $(document).off('click', '#listviewinprooo_signout').on('click', '#listviewinprooo_signout', function() {
+     $(document).off('click', '#inprosign').on('click', '#inprosign', function() {
   sessionStorage.clear(); 
    
   $.mobile.changePage($('#pageone'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
-
 
  superArray_array =  JSON.parse(sessionStorage.getItem("supervisor_view_new_veri_array"));
         //superArray_array =  JSON.parse(sessionStorage.getItem("supervisor_view_new_veri_array_array"));
@@ -51,7 +50,7 @@ var inpro_veri=inprogressArray_array;
 //alert('if inside');
     for(a=0;a<inprogressArray_array.length;a++){
       inpro_obj = inprogressArray_array[a];
-   // alert(inpro_obj.verification_user_id+'superArray');
+    // alert(super_obj.verification_user_id+'superArray');
 var sup_inprogress=inpro_obj.name;
 
 
@@ -96,7 +95,6 @@ function callnextinprogress(index){
 
    inpro_obj = inprogressArray_array[index];
       qualification_id =inpro_obj.type;
-      //alert(inpro_obj.verification_user_id+'superArray');
 
 //alert(qualification_id +'hw');
 
@@ -195,14 +193,6 @@ var eductional_inpro_objay=eductional_inpro_objay;
 
 if(qualification_id == '1' || qualification_id == '2' || qualification_id == '3' || qualification_id == '4' || qualification_id == '5'){
  //alert('currentob education succes');
- if(log_inpro_objg !== undefined ){
-//alert('log current');
-sessionStorage.setItem("currentobj_educational_inpro",JSON.stringify(eductional_inpro_objay));
-sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
-sessionStorage.setItem("currentobj_log_inpro",JSON.stringify(log_inpro_objg)); 
-$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
-return false;
-}
  sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 
 sessionStorage.setItem("currentobj_educational_inpro",JSON.stringify(eductional_inpro_objay));
@@ -212,16 +202,6 @@ sessionStorage.setItem("currentobj_educational_inpro",JSON.stringify(eductional_
 
 if(qualification_id == '12' || qualification_id == '13' || qualification_id == '14' || qualification_id == '15'){
  //alert('currentob address succes');
- if(log_inpro_objg !== undefined ){
-//alert('log current');
-
-sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
-sessionStorage.setItem("currentobj_log_inpro",JSON.stringify(log_inpro_objg)); 
-
-sessionStorage.setItem("currentobja_addressid_inpro",JSON.stringify(address_inpro_obja));
-$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
-return false;
-}
 sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
 
     sessionStorage.setItem("currentobja_addressid_inpro",JSON.stringify(address_inpro_obja));
@@ -231,16 +211,6 @@ sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
          
  if(qualification_id == '7' || qualification_id == '8' || qualification_id == '9' || qualification_id == '10' || qualification_id == '11'){
  //alert('currentob employment succes');
-  if(log_inpro_objg !== undefined ){
-//alert('log current');
-
-sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
-sessionStorage.setItem("currentobj_log_inpro",JSON.stringify(log_inpro_objg)); 
-
-  sessionStorage.setItem("currentobj_employment_records_inpo",JSON.stringify(employment_obja_inpod));
-$.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });
-return false;
-}
  sessionStorage.setItem("currentobj_inpro",JSON.stringify(super_inpro_obj));
   sessionStorage.setItem("currentobj_employment_records_inpo",JSON.stringify(employment_obja_inpod));
   $.mobile.changePage($('#supervisor_inprogress_inside'), { transition: "slide", changeHash: true, reverse: false });

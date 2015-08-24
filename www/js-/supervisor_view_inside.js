@@ -29,12 +29,6 @@ return false;
   $.mobile.changePage($('#supervisor_verified_list'), { transition: "slide", changeHash: true, reverse: false });
 return false;
 });
-                    $(document).off('click', '#before_new_list').on('click', '#before_new_list', function() {
-  //sessionStorage.getItem.clear;
-  //$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
-  $.mobile.changePage($('#supervisor_list_view'), { transition: "slide", changeHash: true, reverse: false });
-return false;
-});
 
   $(document).off('click', '#super_view_inside_signout').on('click', '#super_view_inside_signout', function() {
   sessionStorage.clear(); 
@@ -91,16 +85,10 @@ $("#city_name_newlistq").text(super_obja.city_name);
   
   
      
-
-     
-     
-     
-     
  
-  
     
- var select='<div class="ui-select"><div id="status_val-button" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-corner-all ui-shadow"><div class="ui-select"><div id="status_val-button" class="ui-btn  ui-btn-icon-right ui-corner-all ui-shadow"><span>Select Status</span><select id="status_val"><option value="New">Select Status</option><option value="Inprogress">Inprogress</option> </select></div></div></div></div>' 
-//var select=' <div class="ui-select"><div id="status_val-button" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-corner-all ui-shadow"><div class="ui-select"><div id="status_val-button" class=""><span>Select Status</span><select id="status_val"> <option value="New">Select Status</option><option value="Inprogress">Inprogress</option> </select></div></div></div></div>'
+  
+var select=' <div class="ui-select"><div id="status_val-button" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-corner-all ui-shadow"><div class="ui-select"><div id="status_val-button" class=""><span>Select Status</span><select id="status_val"> <option value="New">Select Status</option><option value="Inprogress">Inprogress</option> </select></div></div></div></div>'
 //var select=' <div class="ui-select"><div id="status_val-button" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-corner-all ui-shadow"><div class="ui-select"><div id="status_val-button"><select id="status_val"><option value="New">Select Status</option> <option value="Inprogress">Inprogress</option></select></div></div></div></div>'
 $('#select').append(select);
 
