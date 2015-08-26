@@ -45,7 +45,7 @@ return false;
 });
 
 
-     $(document).off('click', '#inproinsig').on('click', '#inproinsig', function() {
+     $(document).off('click', '#listviewnew_signout').on('click', '#listviewnew_signout', function() {
   sessionStorage.clear(); 
    
   $.mobile.changePage($('#pageone'), { transition: "none", changeHash: true, reverse: false });

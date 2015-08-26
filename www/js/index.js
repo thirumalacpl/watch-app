@@ -20,14 +20,16 @@ complete: function() {
 success: function (result) {
     console.log(result);
     var pas=result[0];
-    //alert(pas == [object Object]);
-           if(pas == ''){
+     var pass=result[12];
+   // alert(pas+'pas');
+      // alert(pass+'pass');
+          if(pas == '' &&  pass == ''){
     alert('username or password entered is invalid');
     $.mobile.changePage($('#pageone'), { transition: "none", changeHash: true, reverse: false });
     return false; 
 }
-    if(result[0]){
-      
+    if(pas != ''){
+      //alert(pas+'pas');
         sessionStorage.setItem("logged_in","1");
         sessionStorage.setItem("regionArray",JSON.stringify(result[0]));
         sessionStorage.setItem("supervisor_view_new_veri_array",JSON.stringify(result[1]));
@@ -42,17 +44,32 @@ success: function (result) {
         sessionStorage.setItem("supervisor_view_verified_array",JSON.stringify(result[10]));
         sessionStorage.setItem("multiple_documents_array",JSON.stringify(result[11]));
 
+
         $.mobile.loading().hide();
         $(".ui-icon-loading").hide();
          $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false }); 
-  
 
-    }else {
-        $.mobile.loading().hide();
-        alert("username or password entered is invalid");	
-        
+
     }
-    return false;
+    if( pass != ''){
+      //alert(pass+'pass');
+         sessionStorage.setItem("logged_in","1");
+       
+            sessionStorage.setItem("co_regionarray",JSON.stringify(result[12]));
+            sessionStorage.setItem("co_new_veri_list",JSON.stringify(result[13]));
+             sessionStorage.setItem("co_new_veri_list_count_array",JSON.stringify(result[14]));
+             sessionStorage.setItem("co_addressid_records_array",JSON.stringify(result[15]));
+            sessionStorage.setItem("co_educational_records_array",JSON.stringify(result[16]));
+             sessionStorage.setItem("co_multiple_documents_array",JSON.stringify(result[17]));
+              sessionStorage.setItem("co_basic_profile_records_array",JSON.stringify(result[18]));
+
+        $.mobile.loading().hide();
+        $(".ui-icon-loading").hide();
+         $.mobile.changePage($('#co_dashboard'), { transition: "none", changeHash: true, reverse: false }); 
+   return false;
+
+    }
+    
 },
 error: function (request,error) {
     console.log(error);
@@ -61,6 +78,7 @@ alert('Network error has occurred please try again!');
 }
 }); 
  
+  
 }
 });
 });

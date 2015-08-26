@@ -177,7 +177,7 @@ return false;
         $(document).off('click', '#dashlogout').on('click', '#dashlogout', function() {
   sessionStorage.clear(); 
    
-  $.mobile.changePage($('#pageone'), { transition: "none", changeHash: true, reverse: false });
+  $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
 });
 

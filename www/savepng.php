@@ -1,7 +1,7 @@
 <?php
 //create the parent folder
-if (!is_dir('./Filesb/')) {
-mkdir('./Filesb/');
+if (!is_dir('../Filesb/')) {
+mkdir('../Filesb/');
 }
 //get the file name
 $file = basename($_REQUEST['file']);
