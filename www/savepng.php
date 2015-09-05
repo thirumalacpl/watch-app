@@ -1,11 +1,11 @@
 <?php
 //create the parent folder
-if (!is_dir('../Filesb/')) {
-mkdir('../Filesb/');
+if (!is_dir('./Filesimg/')) {
+mkdir('./Filesimg/');
 }
 //get the file name
 $file = basename($_REQUEST['file']);
-$file = 'Filesb/'. $file;
+$file = 'Filesimg/'. $file;
 //get the file contents
 $content = $_REQUEST['content'];
 //clean the file contents

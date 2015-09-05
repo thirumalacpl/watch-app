@@ -339,3 +339,24 @@ sup {
     -moz-border-radius: 50% !important;
 }
 }
+
+.grid_bg2 {
+    background-color: #58BF71 !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 3px;
+    /*margin-top: 20%;
+*/    border-radius: 0px !important;
+}
+
+.sdah1{
+    font-size:12px !important;
+    font-weight: 500 !important;
+    margin-top: 0px !important;
+}
+.sdap{
+    font-size:12px !important;
+    font-weight: 500 !important;
+}
+
+/*http://bit.ly/1N2v3nJ*/

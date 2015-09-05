@@ -1279,7 +1279,17 @@ html >body .ui-rangeslider .ui-rangeslider-sliders .ui-slider-track:first-child 
 	text-overflow: ellipsis;
 }
 
-
+.nd2-card .card-title .card-subtitle {
+	font-size: 14px;
+	margin: 0px;
+	color: #8e8e8e;
+	font-weight: 400;
+	line-height: 20px;
+	max-width: 90%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
 
 .nd2-card.card-media-right .card-title .card-primary-title,
 .nd2-card.card-media-right .card-title .card-subtitle {
@@ -1948,12 +1958,12 @@ text-align: center !important;
 }
 
 
-/*.ui-collapsible-content {
+.ui-collapsible-content {
     display: block;
     margin: 0;
     padding: 0.0em 0em !important;
 }
-*/
+
 
 .bg{
 
@@ -2208,17 +2218,4 @@ margin-top: -1px !important;
 
 	 margin-left: 30px !important;
     margin-right: 100px  !important;
-}
-
-/*chat sep 3*/
-.nd2-card .card-title .card-subtitle {
-	font-size: 14px;
-	margin: 0px;
-	color: #8e8e8e;
-	font-weight: 400;
-	line-height: 20px;
-	max-width: 90%;
-	overflow: hidden;
-	/*white-space: nowrap;*/
-	text-overflow: ellipsis;
 }

@@ -20,7 +20,7 @@ complete: function() {
 success: function (result) {
     console.log(result);
     var pas=result[0];
-     var pass=result[12];
+     var pass=result[14];
    // alert(pas+'pas');
       // alert(pass+'pass');
           if(pas == '' &&  pass == ''){
@@ -43,6 +43,8 @@ success: function (result) {
         sessionStorage.setItem("supervisor_view_inprogress_veri_array_array",JSON.stringify(result[9]));
         sessionStorage.setItem("supervisor_view_verified_array",JSON.stringify(result[10]));
         sessionStorage.setItem("multiple_documents_array",JSON.stringify(result[11]));
+        sessionStorage.setItem("not_veri_array",JSON.stringify(result[12]));
+        sessionStorage.setItem("not_veri_count_array",JSON.stringify(result[13]));
 
 
         $.mobile.loading().hide();
@@ -65,7 +67,8 @@ success: function (result) {
 
         $.mobile.loading().hide();
         $(".ui-icon-loading").hide();
-         $.mobile.changePage($('#co_dashboard'), { transition: "none", changeHash: true, reverse: false }); 
+         /* $.mobile.changePage("coordinator.html", { transition: "none", changeHash: true, reverse: false }); */
+        $.mobile.changePage($('#tabpage'), { transition: "none", changeHash: true, reverse: false });
    return false;
 
     }
